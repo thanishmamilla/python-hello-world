@@ -10,7 +10,7 @@ class MyHandler(BaseHTTPRequestHandler):
             self.send_response(200)
             self.send_header('Content-type', 'text/html')
             self.end_headers()
-            with open("index.html", "rb") as file:
+            with open("home.html", "rb") as file:
                 self.wfile.write(file.read())
         else:
             self.send_response(404)
